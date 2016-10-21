@@ -4,3 +4,6 @@
   <h1>Meal and Calorie Tracker:</h1>
   `
 })
+
+export class AppComponent {
+}
