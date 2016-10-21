@@ -1,0 +1,17 @@
+{
+  "name": "angular2-skeleton",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Meredith Alcorn <alcornmeredith@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/mmalcorn/angular-meal-tracker",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
