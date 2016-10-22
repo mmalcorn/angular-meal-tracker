@@ -19,7 +19,8 @@ import { Food } from './food.model';
     <div>
       <label>Enter total caloric intake:</label>
       <input #foodCalories>
-      <button (click)="addNewMealContents(foodName.value, foodDescription.value, foodCalories.value)">Add</button>
+      <br><br>
+      <button class="btn btn-warning" (click)="addNewMealContents(foodName.value, foodDescription.value, foodCalories.value)">Add</button>
     </div>
   </div>
   `

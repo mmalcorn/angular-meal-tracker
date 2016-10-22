@@ -3,6 +3,31 @@
   font-family: serif;
   font-size: 50pt;
 }
+#name {
+  font-size: 14pt;
+  font-weight: bold;
+}
+#foodname {
+ color: darkgreen;
+}
+
+#description {
+  font-size: 14pt;
+  font-weight: bold;
+}
+#fooddescription {
+  color: maroon;
+}
+#calories {
+  font-size: 14pt;
+  font-weight: bold;
+}
+#foodcalories {
+  color: darkblue;
+}
 .row {
   font-family: monospace;
+}
+
+.btn {
 }

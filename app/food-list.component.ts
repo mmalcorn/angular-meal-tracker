@@ -4,9 +4,9 @@ import { Food } from './food.model';
 @Component({
   selector: 'food-list',
   template: `
-    <h3 *ngFor="let currentMeal of childComponentMeal"><p>Name: {{ currentMeal.foodname }}</p> <p>Description: {{ currentMeal.description }}</p> <p>Calorie Count: {{ currentMeal.calories }}</p><br>
+    <div *ngFor="let currentMeal of childComponentMeal"><p id="foodname"><span id="name">Name:</span> {{ currentMeal.foodname }}</p> <p id="fooddescription"><span id="description">Description:</span> {{ currentMeal.description }}</p> <p id="foodcalories"><span id="calories">Calorie Count:</span> {{ currentMeal.calories }}</p><br>
       <button class="btn btn-success" (click)="buttonClicked(currentMeal)">Change</button><br>
-    </h3>
+    </div>
     `
 })
 
