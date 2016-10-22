@@ -15,14 +15,17 @@ import { Food } from './food.model';
     [childSelectedFood]="selectedMeal"
     (doneEditingSender)="finishedEditing()"
     ></edit-food>
+    <new-food
+      (addMealContentsSender)="addFood($event)"
+    ></new-food>
   </div>
   `
 })
 
 export class AppComponent {
   public parentFoodList: Food[] = [
-    new Food("Lean Pocket: Philly Cheesesteak", "One Philly Cheesesteak lean pocket", 250, 1),
-    new Food("12 shrimp", "Delicious shrimp that fill me with ecstasy", 300, 2),
+    new Food("Lean Pocket: Philly Cheesesteak", "One Philly Cheesesteak lean pocket", 250),
+    new Food("12 shrimp", "Delicious shrimp that fill me with ecstasy", 300),
   ];
   selectedMeal: Food = null;
   displayDetails(clickedFood: Food) {
@@ -30,5 +33,8 @@ export class AppComponent {
   }
   finishedEditing() {
     this.selectedMeal = null;
+  }
+  addFood(newMealFromChild: Food) {
+    this.parentFoodList.push(newMealFromChild);
   }
 }
