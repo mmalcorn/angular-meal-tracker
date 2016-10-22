@@ -5,7 +5,7 @@ import { Food } from './food.model';
   selector: 'my-app',
   template: `
   <div class="container">
-    <h1>Meal and Calorie Tracker:</h1>
+    <h1 id="title">Meal and Calorie Tracker:</h1>
     <hr>
     <food-list
     [childComponentMeal]="parentFoodList"
@@ -23,10 +23,7 @@ import { Food } from './food.model';
 })
 
 export class AppComponent {
-  public parentFoodList: Food[] = [
-    new Food("Lean Pocket: Philly Cheesesteak", "One Philly Cheesesteak lean pocket", 250),
-    new Food("12 shrimp", "Delicious shrimp that fill me with ecstasy", 300),
-  ];
+  public parentFoodList: Food[] = [];
   selectedMeal: Food = null;
   displayDetails(clickedFood: Food) {
     this.selectedMeal = clickedFood;
