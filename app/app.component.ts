@@ -9,7 +9,12 @@ import { Food } from './food.model';
     <hr>
     <food-list
     [childComponentMeal]="parentFoodList"
+    (clickSender)="displayDetails($event)"
     ></food-list>
+    <edit-food
+    [childSelectedFood]="selectedMeal"
+    (doneEditingSender)="finishedEditing()"
+    ></edit-food>
   </div>
   `
 })
@@ -19,9 +24,11 @@ export class AppComponent {
     new Food("Lean Pocket: Philly Cheesesteak", "One Philly Cheesesteak lean pocket", 250, 1),
     new Food("12 shrimp", "Delicious shrimp that fill me with ecstasy", 300, 2),
   ];
-
-
-  buttonClicked() {
-    alert("working");
+  selectedMeal: Food = null;
+  displayDetails(clickedFood: Food) {
+    this.selectedMeal = clickedFood;
+  }
+  finishedEditing() {
+    this.selectedMeal = null;
   }
 }
