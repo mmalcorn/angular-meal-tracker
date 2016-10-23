@@ -6,7 +6,7 @@ import { Food } from './food.model';
   pure: false
 })
 export class FoodPipe implements PipeTransform {
-  transform(input: Food[]) {
+  transform(input: Food[], calorieTotal) {
     var output: Food[] = [];
     if (calorieTotal === "highCal") {
       for (var i = 0; i < input.length; i++) {
@@ -24,6 +24,6 @@ export class FoodPipe implements PipeTransform {
       return output;
     } else {
     return input;
-      }
     }
   }
+}
