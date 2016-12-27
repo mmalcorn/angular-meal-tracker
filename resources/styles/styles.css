@@ -1,8 +1,68 @@
-#title {
-  text-align: center;
-  font-family: serif;
-  font-size: 50pt;
+body {
+    background-color: #222;
 }
+
+.container {
+    background-color: #fff;
+}
+
+.main-nav {
+    background-color: maroon;
+    width: 100%;
+    min-height: 30px;
+    margin: 0 0 0 0;
+    padding: 10px;
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    font-size: 4em;
+    letter-spacing: 10px;
+    color: #FFF;
+}
+
+.imgs {
+    margin-right: 15%;
+    width: 12%;
+    height: 12%;
+    border-radius: 350%;
+    display: block;
+}
+
+.new-food-display {
+    margin-top: 10%;
+    width: 50%;
+    padding: 2%;
+    background-color: #FFF;
+    border-radius: 10px;
+}
+
+.btn-warning {
+    background-color: darkgreen;
+    border: darkgreen;
+    margin-bottom: 5%;
+}
+
+.modal-container {
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0,0.4);
+}
+
+#edit-meal {
+        background-color: #888;
+        color: #fff;
+        margin: 15% auto;
+        padding: 20px;
+        border: 1px solid #888;
+        border-radius: 2%;
+        width: 50%;
+}
+
 #name {
   font-size: 14pt;
   font-weight: bold;
@@ -25,9 +85,23 @@
 #foodcalories {
   color: darkblue;
 }
-.row {
-  font-family: monospace;
+
+.col-xs-6 {
+    margin-top: 5%;
 }
 
-.btn {
+.form-group {
+    width: 70%;
+    margin-top:12%;
+    margin-left: 20%;
+}
+
+#add-food-button {
+    background-color: darkblue;
+    border: darkblue;
+    margin-top: 2%;
+}
+
+#edit-button {
+    margin-top: 5%;
 }
